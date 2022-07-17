@@ -7,15 +7,20 @@ const App = () => {
   const [inputValue, setInputValue] = useState('');
   const [todos, setTodos] = useState([]);
   return (
-    <>
+    <div className="main-container">
       <TodoForm
         inputValue={inputValue}
         setInputValue={setInputValue}
         todos={todos}
         setTodos={setTodos}
       />
-      <TodoList inputValue={inputValue} setInputValue={setInputValue} />
-    </>
+      <TodoList
+        inputValue={inputValue}
+        setInputValue={setInputValue}
+        todos={todos}
+        setTodos={setTodos}
+      />
+    </div>
   );
 };
 
