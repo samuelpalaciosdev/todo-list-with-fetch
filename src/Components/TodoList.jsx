@@ -15,6 +15,11 @@ const TodoList = ({ todos, setTodos, counter, setCounter }) => {
             setCounter={setCounter}
           />
         ))}
+        {counter !== 0 ? (
+          <li className="counter mt-4">{counter} items left</li>
+        ) : (
+          <li className="counter mt-4">No tasks, add a task</li>
+        )}
       </ul>
     </div>
   );

@@ -20,3 +20,7 @@ code {
 .todo-list {
   padding-left: 1.5rem;
 }
+
+.counter {
+  font-size: 1.1rem;
+}
