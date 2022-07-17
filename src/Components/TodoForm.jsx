@@ -27,6 +27,7 @@ const TodoForm = ({ todos, setTodos, inputValue, setInputValue }) => {
       <h1 className="display-2">Todos</h1>
       <form>
         <input
+          value={inputValue}
           type="text"
           onChange={inputTextHandler}
           className="todo-input"
