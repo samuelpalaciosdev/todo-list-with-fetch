@@ -7,6 +7,7 @@ const App = () => {
   const [inputValue, setInputValue] = useState('');
   const [todos, setTodos] = useState([]);
   const [counter, setCounter] = useState(0);
+  const [errorMsg, setErrorMsg] = useState('');
   return (
     <div className="main-container">
       <TodoForm
@@ -16,6 +17,8 @@ const App = () => {
         setTodos={setTodos}
         counter={counter}
         setCounter={setCounter}
+        errorMsg={errorMsg}
+        setErrorMsg={setErrorMsg}
       />
       <TodoList
         inputValue={inputValue}
