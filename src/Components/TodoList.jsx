@@ -1,6 +1,6 @@
 import Todo from './Todo';
 
-const TodoList = ({ todos, setTodos }) => {
+const TodoList = ({ todos, setTodos, counter, setCounter }) => {
   return (
     <div className="todo-container">
       <ul className="todo-list">
@@ -11,6 +11,8 @@ const TodoList = ({ todos, setTodos }) => {
             todo={todo}
             todos={todos}
             setTodos={setTodos}
+            counter={counter}
+            setCounter={setCounter}
           />
         ))}
       </ul>

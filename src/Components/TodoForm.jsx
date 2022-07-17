@@ -1,5 +1,12 @@
 import '../Styles/Form.css';
-const TodoForm = ({ todos, setTodos, inputValue, setInputValue }) => {
+const TodoForm = ({
+  todos,
+  setTodos,
+  inputValue,
+  setInputValue,
+  counter,
+  setCounter,
+}) => {
   // Events functions
 
   const inputTextHandler = e => {
@@ -20,12 +27,14 @@ const TodoForm = ({ todos, setTodos, inputValue, setInputValue }) => {
     ]);
     // Reset input when submitted
     setInputValue('');
+    // Increment counter on submit
+    setCounter(counter + 1);
   };
 
   return (
-    <div className="form-container text-center">
-      <h1 className="display-2">Todos</h1>
-      <form>
+    <div className="form-container text-center mt-5">
+      <h1 className="display-2">Todos {counter}</h1>
+      <form onSubmit={submitTodo}>
         <input
           value={inputValue}
           type="text"
