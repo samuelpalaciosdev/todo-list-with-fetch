@@ -1,3 +1,4 @@
+import '../Styles/Form.css';
 const TodoForm = () => {
   return (
     <div className="form-container text-center">
