@@ -1,7 +1,9 @@
+import TodoForm from './Components/TodoForm';
+
 const App = () => {
   return (
     <>
-      <h1>App goes here!</h1>
+      <TodoForm />
     </>
   );
 };
