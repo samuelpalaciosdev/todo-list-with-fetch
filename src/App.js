@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import TodoForm from './Components/TodoForm';
+import TodoList from './Components/TodoList';
 
 const App = () => {
   // States
@@ -13,6 +14,7 @@ const App = () => {
         todos={todos}
         setTodos={setTodos}
       />
+      <TodoList inputValue={inputValue} setInputValue={setInputValue} />
     </>
   );
 };

@@ -1,0 +1,31 @@
+.todo {
+  height: 2.5rem;
+  padding-left: 3rem;
+  max-width: 300px;
+  border: 1px solid #8f8f9d;
+}
+
+.todo:first-child {
+  margin-top: 1rem;
+}
+
+.todo:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.todo:hover .trash-icon {
+  cursor: pointer;
+  display: block;
+}
+
+.trash-btn {
+  display: none;
+  height: 2.5rem;
+  padding-inline: 0.8em;
+  border: none;
+}
+
+.trash-icon {
+  display: none;
+  color: #414141;
+}
