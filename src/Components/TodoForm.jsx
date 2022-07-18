@@ -43,7 +43,7 @@ const TodoForm = ({
 
   return (
     <div className="form-container text-center mt-5">
-      <h1 className="display-2">Todos</h1>
+      <h1 className="display-2">Todos w fetch</h1>
       <form onSubmit={submitTodo}>
         <input
           value={inputValue}
